@@ -6,5 +6,8 @@ namespace DhruviBookStore.Models
 {
     class Category
     {
+        public int ID { get; set; }
+
+        [Display(Name
     }
 }
