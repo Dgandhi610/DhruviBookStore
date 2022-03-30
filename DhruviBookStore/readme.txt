@@ -76,6 +76,22 @@ Backpain issue! Trying my best to complete this now. Imp part of the Project as 
 
 1:36pm built the project. commiting to github.
 
+1:58pm
+Moving on to next step that is to cteate the database.
+
+couldnt continue,because of the pain. took medication and rest. 
+
+1:00pm
+
+started off
+
+migration added
+
+built successfully.
+
+2:10am Updated the database
+commiting changes
+
 
 
 
