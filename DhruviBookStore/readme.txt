@@ -99,5 +99,13 @@ sleepy
 continue in morning.
 
 
+my health is not good. trying to finish this. 
+Medications making it difficult to keep awake. 
+
+Anyways! Starting again- 12:03
+
+
+
+
 
 
