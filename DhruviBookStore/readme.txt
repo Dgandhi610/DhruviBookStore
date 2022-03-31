@@ -115,6 +115,13 @@ created repo and making individual repos.
 
 23:09 pushing commit chnages to github for what done so far.
 
+1:05am
+completed the repository part.
+
+commited to github
+
+moving on to next part
+
 
 
 
