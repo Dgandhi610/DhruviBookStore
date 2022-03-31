@@ -104,6 +104,17 @@ Medications making it difficult to keep awake.
 
 Anyways! Starting again- 12:03
 
+1:16- categories table added to database.
+commited to git.
+
+
+took rest health not getting good.
+
+afternoon: started creating repositories.
+created repo and making individual repos.
+
+23:09 pushing commit chnages to github for what done so far.
+
 
 
 
