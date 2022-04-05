@@ -6,17 +6,18 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Microsoft.Data.SqlClient;
 
 namespace DhruviBookStore.DataAccess.Repository
 {
-    public class SP_Class : ISP_Call
+    public class SP_Call : ISP_Call
     {
         private readonly ApplicationDbContext _db;
         private static string ConnectionString = "";
 
         //constructor
 
-        public SP_Class(ApplicationDbContext db)
+        public SP_Call(ApplicationDbContext db)
         {
             _db = db;
             ConnectionString = db.Database.GetDbConnection().ConnectionString;
@@ -44,7 +45,7 @@ namespace DhruviBookStore.DataAccess.Repository
             }
         }
 
-        public Tuple<IEnumerable<T2>> List<T1, T2>(string procedurename, DynamicParameters param = null)
+        public Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedurename, DynamicParameters param = null)
         {
             using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
@@ -65,12 +66,11 @@ namespace DhruviBookStore.DataAccess.Repository
         {
             using(SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
-                using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
-                {
+                
+      
                     sqlCon.Open();
                     var value = sqlCon.Query<T>(procedurename, param, commandType: System.Data.CommandType.StoredProcedure);
                     return (T)Convert.ChangeType(value.FirstOrDefault(), typeof(T));
-                }
             }
         }
 

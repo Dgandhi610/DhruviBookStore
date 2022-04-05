@@ -144,6 +144,12 @@ gng to sleep continue tomorrow.
 
 commiting the changes.
 
+4:10pm
+
+resolved the following errors face with sql connection in Sp_Call class file.  added the using statement and resolved the error.
+
+commiting the changes to github.
+
 
 
 
