@@ -1,4 +1,5 @@
 using DhruviBookStore.DataAccess.Data;
+using DhruviBookStore.DataAccess.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +35,7 @@ namespace DhruviBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped <IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 

@@ -122,6 +122,30 @@ commited to github
 
 moving on to next part
 
+a long break. 
+
+04-04-22
+
+11:47 started again. 
+
+completed editing SP_Class
+
+commited to gitme
+
+started UnitOfWork
+
+completed creating the file. 
+
+1:55 am
+
+error in sqlconnection in Sp class file. 
+
+gng to sleep continue tomorrow. 
+
+commiting the changes.
+
+
+
 
 
 

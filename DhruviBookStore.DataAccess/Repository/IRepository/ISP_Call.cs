@@ -1,4 +1,7 @@
-﻿using Dapper;
+﻿
+using DhruviBookStore.DataAccess.Repository.IRepository;
+using DhruviBookStore.DataAccess.Data;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Text;
