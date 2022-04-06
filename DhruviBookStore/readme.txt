@@ -157,6 +157,11 @@ completed Part-1 successfully
 errors resolved.
 
 
+4:05am 
+part 2 finally completed.
+
+assignment part 3
+strating now. 10:44am
 
 
 

@@ -1,4 +1,5 @@
 ﻿using DhruviBookStore.DataAccess.Repository.IRepository;
+using DhruviBookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,34 @@ namespace DhruviBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult Upsert(int? id)
+        {
+            Category category = new Category();
+            if (id == null)
+            {
+                return View(category);
+            }
+           
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+
+            public IActionResult Upsert(Category category)
+            {
+                if(ModelState.IsValid)
+                {
+                    if(category.Id == 0)
+                    {
+                        _unitOfWork.Category.Add(category);
+                        _unitOfWork.Save();
+                    }
+                    else
+                    {
+                        _unitOfWork.Category.Update(category);
+                    }
+                }
+                return View(category);
+            }
+
         //API Calls
 
         #region API CALLS
@@ -29,6 +58,19 @@ namespace DhruviBookStore.Areas.Admin.Controllers
         {
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork,Save();
+            return Json(new { success = true, message = "Delete successful" });
         }
         #endregion
     }
