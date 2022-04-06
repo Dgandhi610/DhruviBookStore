@@ -35,7 +35,7 @@ namespace DhruviBookStore
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddScoped <IUnitOfWork, UnitOfWork>();
+            services.AddScoped <UnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 

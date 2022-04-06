@@ -10,7 +10,7 @@ namespace DhruviBookStore.DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
 
-        public UnitOfWork(ApplicationDbContext db, SP_Call SP_Class)
+        public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             Category = new CategoryRepository(_db);

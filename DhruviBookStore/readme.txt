@@ -130,7 +130,7 @@ a long break.
 
 completed editing SP_Class
 
-commited to gitme
+commited to github
 
 started UnitOfWork
 
@@ -150,6 +150,11 @@ resolved the following errors face with sql connection in Sp_Call class file.  a
 
 commiting the changes to github.
 
+completed UnitOfWork file.
+
+completed Part-1 successfully
+
+errors resolved.
 
 
 
