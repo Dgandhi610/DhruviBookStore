@@ -7,6 +7,8 @@ namespace DhruviBookStore.DataAccess.Repository.IRepository
     public interface IUnitOfWork :IDisposable
     {
         ICategoryRepository Category { get; }
+
+    ICoverType CoverType { get; }
         ISP_Call SP_Call { get; }
 
         void Save();
