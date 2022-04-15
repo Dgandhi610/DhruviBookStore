@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DhruviBookStore.DataAccess.Repository.IRepository
 {
@@ -8,7 +10,7 @@ namespace DhruviBookStore.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
 
-    ICoverType CoverType { get; }
+    ICoverTypeRepository CoverType { get; }
         ISP_Call SP_Call { get; }
 
         void Save();

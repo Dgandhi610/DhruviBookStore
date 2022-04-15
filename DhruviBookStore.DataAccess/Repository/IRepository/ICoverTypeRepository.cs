@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DhruviBookStore.DataAccess.Repository.IRepository
 {
-   public interface ICoverType: IRepository<CoverType> 
+   public interface ICoverTypeRepository: IRepository<CoverTypeRepository> 
     {
-        void Update(CoverType coverType);
+        void Update(CoverTypeRepository coverType);
 
     }
 }

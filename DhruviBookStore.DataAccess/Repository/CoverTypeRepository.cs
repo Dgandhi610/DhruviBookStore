@@ -5,23 +5,23 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DhruviBookStore.DataAccess.Repository
 {
-   public class CoverType
+   public class CoverTypeRepository : Repository<CoverTypeRepository>, ICoverTypeRepository
     {
         private readonly ApplicationDbContext _db;
-        public CoverType(ApplicationDbContext db)
+        public CoverTypeRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
         public void Update(CoverType coverType)
         {
-            var objFromDb = _db.CoverType.FirstOrDefault(s => s.Id == coverType.Id);
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
             if (objFromDb != null)
             {
-                objFromDb.Name = CoverType.Name;
-                _db.SaveChanges();
+                objFromDb.Name = coverType.Name;
             }
         }
     }
