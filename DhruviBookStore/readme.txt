@@ -167,4 +167,16 @@ created cover type in repo, models and unit of work. facing error no time to res
 
 
 
+17-04-22
+13:12
+
+resolved the erroe was facing with starup.cs file in  "services.AddScoped<IUnitOfWork, UnitOfWork>();" 
+
+Took a look at given github link of project by the sir, and resolved with making few changes in IUnitOfWork Repo files, and AddDbContext file. 
+
+Also, The covertype erroe facing while making changes to the file.
+
+
+Now tryoing to build the project and run the app.
+
 
