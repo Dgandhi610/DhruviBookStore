@@ -193,3 +193,4 @@ added Product.cs in Models folder
  20220417230609_AddProductToDb 6:45pm
 
 updating database.
+
