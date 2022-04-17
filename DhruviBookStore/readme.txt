@@ -178,5 +178,16 @@ Also, The covertype erroe facing while making changes to the file.
 
 
 Now tryoing to build the project and run the app.
+ 
+ created migration of Covertype:
+
+ 20220417193047_AddCoverTypeToDb - 2:45pm
+ edited the file and updated the database. Confirm that it appears in the database tables. 
+
+
+resolved errors, in the controller file, and run the project.
+
+added Product.cs in Models folder
+ 
 
 
