@@ -193,4 +193,5 @@ added Product.cs in Models folder
  20220417230609_AddProductToDb 6:45pm
 
 updating database.
+ 20220417233852_addValidationToProduct added validation migration - 7:39pm
 
