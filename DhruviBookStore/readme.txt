@@ -189,5 +189,7 @@ resolved errors, in the controller file, and run the project.
 
 added Product.cs in Models folder
  
+ added migration. 
+ 20220417230609_AddProductToDb 6:45pm
 
-
+updating database.
