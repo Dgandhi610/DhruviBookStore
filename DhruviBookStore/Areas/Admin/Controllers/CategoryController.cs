@@ -29,8 +29,15 @@ namespace DhruviBookStore.Areas.Admin.Controllers
             {
                 return View(category);
             }
-           
-            [HttpPost]
+            // this is for edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return View(category);
+        }
+        [HttpPost]
             [ValidateAntiForgeryToken]
 
             public IActionResult Upsert(Category category)
@@ -40,26 +47,27 @@ namespace DhruviBookStore.Areas.Admin.Controllers
                     if(category.Id == 0)
                     {
                         _unitOfWork.Category.Add(category);
-                        _unitOfWork.Save();
                     }
                     else
                     {
                         _unitOfWork.Category.Update(category);
                     }
-                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+        }
                 return View(category);
             }
 
         //API Calls
 
         #region API CALLS
+
         [HttpGet]
         public IActionResult GetAll()
         {
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
         }
-
         [HttpDelete]
         public IActionResult Delete(int id)
         {
@@ -69,9 +77,10 @@ namespace DhruviBookStore.Areas.Admin.Controllers
                 return Json(new { success = false, message = "Error while deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
-            _unitOfWork,Save();
-            return Json(new { success = true, message = "Delete successful" });
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
         }
-        #endregion
+
+           #endregion 
     }
 }
