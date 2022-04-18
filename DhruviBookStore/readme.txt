@@ -197,4 +197,4 @@ updating database.
 
  succesfully updated.
  
- creatin
+ creating repository for product.
