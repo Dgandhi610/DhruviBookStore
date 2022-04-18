@@ -198,3 +198,4 @@ updating database.
  succesfully updated.
  
  creating repository for product.
+ Start from index view editing.
