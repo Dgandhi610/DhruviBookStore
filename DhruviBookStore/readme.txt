@@ -195,3 +195,6 @@ added Product.cs in Models folder
 updating database.
  20220417233852_addValidationToProduct added validation migration - 7:39pm
 
+ succesfully updated.
+ 
+ creatin
