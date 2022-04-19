@@ -199,3 +199,5 @@ updating database.
  
  creating repository for product.
  Start from index view editing.
+
+ Added Index and Upsert files in Product Views folder.
