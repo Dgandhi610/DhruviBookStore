@@ -201,3 +201,5 @@ updating database.
  Start from index view editing.
 
  Added Index and Upsert files in Product Views folder.
+
+ 11:24pm added controller to product!!!
