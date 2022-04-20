@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DhruviBookStore.Ares.Customer.Controllers
+namespace DhruviBookStore.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller

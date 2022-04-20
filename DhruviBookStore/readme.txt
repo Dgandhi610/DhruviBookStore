@@ -203,3 +203,5 @@ updating database.
  Added Index and Upsert files in Product Views folder.
 
  11:24pm added controller to product!!!
+
+ 11.41pm solving few errors and almost done with the app.
