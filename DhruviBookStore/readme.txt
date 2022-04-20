@@ -205,3 +205,13 @@ updating database.
  11:24pm added controller to product!!!
 
  11.41pm solving few errors and almost done with the app.
+
+
+ 12:07am 20/04/22
+ cant resolve the final error, cant add categories, product/
+
+ done. 
+
+ commiting final changes. 
+
+ Finallly!!!!!!
